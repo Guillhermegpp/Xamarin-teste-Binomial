@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Binomial.Screen2">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" Padding="20" Spacing="20" Margin="30">
+
+            <Label Text="Numero total de provas" />
+            <Entry x:Name="n"  Keyboard="Telephone" Text="5"/>
+            <Label Text="Numero de vezes que se quer a ocorrencia do evento:" />
+            <Entry x:Name="k"  Keyboard="Telephone" Text="2" />
+            <Label Text="Probabilidade do sucesso:" />
+            <Entry x:Name="p"  Keyboard="Numeric" Text="0.5" />
+            <Label Text="Probabilidade do fracasso:" />
+            <Entry x:Name="q"  Keyboard="Numeric" Text="0.5" />
+            <Label x:Name="calulo"  Text="" />
+            <Button x:Name="Soma" Text="Calcular" Clicked="Calcular_Clicked" BorderWidth="2" BorderColor="Black"/>
+            
+            <Button x:Name="Sair" Text="Sair" Clicked="voltar"   BorderWidth="2" BorderColor="Black"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

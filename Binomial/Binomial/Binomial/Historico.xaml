@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Binomial.Historico">
+    
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="20" Spacing="20" Margin="30">
+            
+            <Label Text="Historico: "/>
+            <ScrollView>
+                <Label x:Name="output"/>
+            </ScrollView>
+
+            <Button x:Name="Limpar" Text="Limpar" Clicked="limpar" BorderWidth="2" BorderColor="Black"/>
+            <Button x:Name="Sair" Text="Sair" Clicked="voltar" BorderWidth="2" BorderColor="Black"/>
+            
+
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

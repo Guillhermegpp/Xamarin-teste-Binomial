@@ -1,0 +1,1 @@
+E:\Users\Guilherme\source\repos\LearningC-Sharpe\Binomial\Binomial\Binomial.UWP\Binomial.UWP.csproj;x86
