@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Binomial.Screen2">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" 
+        <ScrollView>
+        <StackLayout VerticalOptions="CenterAndExpand" LayoutChanged="Calcular_Clicked"
                 HorizontalOptions="CenterAndExpand" Padding="20" Spacing="20" Margin="30">
-
+            
             <Label Text="Numero total de provas" />
             <Entry x:Name="n"  Keyboard="Telephone" Text="5"/>
             <Label Text="Numero de vezes que se quer a ocorrencia do evento:" />
@@ -18,7 +19,8 @@
             <Button x:Name="Soma" Text="Calcular" Clicked="Calcular_Clicked" BorderWidth="2" BorderColor="Black"/>
             
             <Button x:Name="Sair" Text="Sair" Clicked="voltar"   BorderWidth="2" BorderColor="Black"/>
+            
         </StackLayout>
-
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

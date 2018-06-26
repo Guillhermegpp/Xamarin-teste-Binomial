@@ -12,7 +12,7 @@ namespace Binomial
         private async void getTime(object sender, EventArgs e)
         {
 
-            await DisplayAlert("Horario Atual:", getTimes(), "Cancelar");
+            await DisplayAlert("Horario Atual:", getTimes(), "Ok");
         }
 
         public static string getTimes()
@@ -25,7 +25,7 @@ namespace Binomial
                 var min = tempo.Minute.ToString();
                 var mil = tempo.Second.ToString();
                 var dia = tempo.Day.ToString();
-                var mes = tempo.Second.ToString();
+                var mes = tempo.Month.ToString();
                 var horario = dia + "/" + mes + " - " + hora + ":" + min + ":" + mil;
                 
                 return horario;

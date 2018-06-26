@@ -26,7 +26,7 @@ namespace Binomial
                 {
                     return Double.Parse(s[0]) / Double.Parse(s[1]);
                 }
-                catch (Exception a)
+                catch (Exception)
                 {
                     throw new Exception("");
                 }
@@ -39,7 +39,7 @@ namespace Binomial
                 Double.Parse(s);
                 return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }
